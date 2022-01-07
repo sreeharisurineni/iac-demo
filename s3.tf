@@ -1,8 +1,6 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "ford123"
-  acl    = "private"
+resource "aws_s3_bucket_public_access_block" "example" {
+  bucket = firstbucket9779
 
-  versioning {
-    enabled = true
-  }
+  block_public_acls   = true
+  block_public_policy = true
 }
