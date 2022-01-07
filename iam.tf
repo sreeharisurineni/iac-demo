@@ -1,4 +1,4 @@
 resource "aws_iam_group" "developers" {
-  name = "dev"
+  name = "developers"
   path = "/users/"
 }
